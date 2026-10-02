@@ -137,6 +137,3 @@ pdftoppm -f 60 -l 63 -r 100 -gray "out/book_A5.pdf" /tmp/pg
 
 Then measure the ink bounding box per page with Pillow (`ImageChops.invert(crop).getbbox()`; at 100 dpi, 3.937 px/mm). Crop out the header and folio bands to measure the text block alone.
 
-## License
-
-Add your license here.
