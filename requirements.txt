@@ -1,0 +1,16 @@
+# EPUB/AZW3 -> printable A5 PDF
+#
+#   pip install -r requirements.txt
+#   python -m playwright install chromium     <- required, downloads the browser
+#
+# Versions below are the ones this was tested with (Python 3.14).
+
+playwright>=1.40          # renders the HTML to PDF (Chromium)
+beautifulsoup4>=4.12      # EPUB/OPF/NCX and XHTML parsing
+pypdf>=5.0                # page extraction, overlays, merge
+reportlab>=4.0            # page numbers, running headers, -ac image page
+pillow>=10.0              # -ac image size / dpi
+
+# Optional: AZW3 / MOBI / AZW / PRC input.
+# Not needed for EPUB. Calibre's `ebook-convert` is used instead when installed.
+mobi>=0.4                 # KindleUnpack
